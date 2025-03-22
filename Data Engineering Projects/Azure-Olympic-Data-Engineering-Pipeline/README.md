@@ -9,6 +9,9 @@ This project utilizes data from the 2021 Olympics in Tokyo, sourced from Kaggle.
 ## Architecture
 ![Project Architecture](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/architecture.png)
 
+![Project Architecture](https://github.com/rohitaragde/Data Engineering Projects/Azure-Olympic-Data-Engineering-Pipeline/images/architecture.png).
+
+
 The project leverages the following Azure services:
 - Azure Data Factory
 - Azure Data Lake Storage Gen2
