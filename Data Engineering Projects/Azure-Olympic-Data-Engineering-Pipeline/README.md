@@ -7,7 +7,6 @@ This project implements a comprehensive data engineering pipeline for Olympic da
 This project utilizes data from the 2021 Olympics in Tokyo, sourced from Kaggle. The dataset provides comprehensive information about the Tokyo Olympics, including details on athletes, coaches, events, and medal outcomes.
 
 ## Architecture
-
 ![Project Architecture](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/architecture.png).
 
 
