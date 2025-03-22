@@ -69,19 +69,19 @@ Environmental advocates passionate about sustainable travel and eager to engage 
 <br>
 <br>
 ## Our Activities:
-![Screenshot 2](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/UI_Project_screenshot_01.png)
+![Screenshot 2](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/screenshot_02.png)
 <br>
 <br>
 ## Our Stories:
-![Screenshot 3](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/UI_Project_screenshot_01.png)
+![Screenshot 3](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/screenshot_03.png)
 <br>
 <br>
 ## Our Contributions:
-![Screenshot 4](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/UI_Project_screenshot_01.png)
+![Screenshot 4](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/screenshot_04.png)
 <br>
 <br>
 ## Our Feedback and Impact:
-![Screenshot 5](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/UI_Project_screenshot_01.png)
+![Screenshot 5](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/screenshot_05.png)
 <br>
 <br>
 
