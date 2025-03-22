@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Projects
 =======
 # Projects Overview
@@ -20,4 +19,3 @@
 ## Software Engineering Projects
 - [NatureQuest Flask Web App](https://github.com/rohitaragde/NatureQuest-Flask-Web-App)
 - [Collaborative Chat Application QUIC](https://github.com/rohitaragde/Collaborative-Chat-Application-QUIC)
->>>>>>> 063374e (Initial commit: Added project structure)
