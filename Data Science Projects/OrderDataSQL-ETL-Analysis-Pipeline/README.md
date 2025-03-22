@@ -4,7 +4,9 @@ This project demonstrates the process of downloading, cleaning, processing, and 
 
 # System Design Overview
 
-![System Overview](https://github.com/rohitaragde/OrderDataSQL-ETL-Analysis/blob/master/system_overview.png)
+![System Overview](https://github.com/rohitaragde/Projects/blob/master/Data%20Science%20Projects/OrderDataSQL-ETL-Analysis-Pipeline/system_overview.png
+)
+
 
 The following steps outline the system design for the Retail Orders Data Analysis pipeline:-
 
