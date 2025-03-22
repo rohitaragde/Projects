@@ -16,3 +16,21 @@
 [submodule "Data Engineering Projects/Voice-Data-ELT-Automation-with-Teradata"]
 	path = Data Engineering Projects/Voice-Data-ELT-Automation-with-Teradata
 	url = https://github.com/rohitaragde/Voice-Data-ELT-Automation-with-Teradata
+[submodule "Data Science Projects/FitTrack"]
+	path = Data Science Projects/FitTrack
+	url = https://github.com/rohitaragde/FitTrack
+[submodule "Data Science Projects/PySpark-House-Prices-Analysis"]
+	path = Data Science Projects/PySpark-House-Prices-Analysis
+	url = https://github.com/rohitaragde/PySpark-House-Prices-Analysis
+[submodule "Data Science Projects/Loan_Repayment_Prediction_Analysis_System"]
+	path = Data Science Projects/Loan_Repayment_Prediction_Analysis_System
+	url = https://github.com/rohitaragde/Loan_Repayment_Prediction_Analysis_System
+[submodule "Data Science Projects/OrderDataSQL-ETL-Analysis-Pipeline"]
+	path = Data Science Projects/OrderDataSQL-ETL-Analysis-Pipeline
+	url = https://github.com/rohitaragde/OrderDataSQL-ETL-Analysis-Pipeline
+[submodule "Software Engineering Projects/NatureQuest-Flask-Web-App"]
+	path = Software Engineering Projects/NatureQuest-Flask-Web-App
+	url = https://github.com/rohitaragde/NatureQuest-Flask-Web-App
+[submodule "Software Engineering Projects/Collaborative-Chat-Application-QUIC"]
+	path = Software Engineering Projects/Collaborative-Chat-Application-QUIC
+	url = https://github.com/rohitaragde/Collaborative-Chat-Application-QUIC
