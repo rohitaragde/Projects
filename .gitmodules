@@ -1,0 +1,18 @@
+[submodule "Data Engineering Projects/SSIS_SQL_ETL_Pipeline"]
+	path = Data Engineering Projects/SSIS_SQL_ETL_Pipeline
+	url = https://github.com/rohitaragde/SSIS_SQL_ETL_Pipeline
+[submodule "Data Engineering Projects/Azure-Olympic-Data-Engineering-Pipeline"]
+	path = Data Engineering Projects/Azure-Olympic-Data-Engineering-Pipeline
+	url = https://github.com/rohitaragde/Azure-Olympic-Data-Engineering-Pipeline
+[submodule "Data Engineering Projects/OrderDataSQL-ETL-Analysis-Pipeline"]
+	path = Data Engineering Projects/OrderDataSQL-ETL-Analysis-Pipeline
+	url = https://github.com/rohitaragde/OrderDataSQL-ETL-Analysis-Pipeline
+[submodule "Data Engineering Projects/Covid-19-Data-ETL-Automation-with-Airflow"]
+	path = Data Engineering Projects/Covid-19-Data-ETL-Automation-with-Airflow
+	url = https://github.com/rohitaragde/Covid-19-Data-ETL-Automation-with-Airflow
+[submodule "Data Engineering Projects/Uber-ETL-Automation-with-Airflow-Mage"]
+	path = Data Engineering Projects/Uber-ETL-Automation-with-Airflow-Mage
+	url = https://github.com/rohitaragde/Uber-ETL-Automation-with-Airflow-Mage
+[submodule "Data Engineering Projects/Voice-Data-ELT-Automation-with-Teradata"]
+	path = Data Engineering Projects/Voice-Data-ELT-Automation-with-Teradata
+	url = https://github.com/rohitaragde/Voice-Data-ELT-Automation-with-Teradata
