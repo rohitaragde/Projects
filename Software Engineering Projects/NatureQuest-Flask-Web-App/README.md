@@ -69,9 +69,6 @@ Environmental advocates passionate about sustainable travel and eager to engage 
 <br>
 <br>
 ## Our Activities:
-![Screenshot 1](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/screenshot_02.png)
-
-
 ![Screenshot 2](https://github.com/rohitaragde/Projects/blob/master/Software%20Engineering%20Projects/NatureQuest-Flask-Web-App/screenshots/screenshot_02.png)
 
 
