@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NatureQuest</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css') }}"
+        rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+
+
+    <link href="{{ url_for('static', filename='css/tripnext/activities.css') }}" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename='css/tripnext/style.css') }}" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>NatureQuest</h1>
+                <!-- <img src="/static/img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/home" class="nav-item nav-link">Home</a>
+                    <a href="/noti" class="nav-item nav-link">Activities</a>
+                    <a href="#stories" class="nav-item nav-link ">Stories</a>
+                    <a href="/marketplace" class="nav-item nav-link">Contributions</a>
+                    <div class="nav-item dropdown">
+                        
+                        <div class="dropdown-menu m-0">
+                            <a href="/faq" class="dropdown-item">FAQs</a>
+                            <a href="#Activities" class="dropdown-item">Chat With Us</a>
+
+                        </div>
+                    </div>
+                   
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Help</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="/faq" class="dropdown-item">FAQs</a>
+                            <a href="#Activities" class="dropdown-item">Chat With Us</a>
+
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        {% if login_success %}
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fas fa-user"></i>
+                        </a>
+                       <div class="dropdown-menu m-0">
+                            <a href="/profile" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Photos</a>
+                            <a href="#" class="dropdown-item"> Trips</a>
+                           
+                            <a href="/logout" class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                    <a href="package.html" class="nav-item nav-link"></a>
+                    {% else %}
+                    <a href="/loginpage" class="nav-item nav-link">Login</a>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">Activity Details</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="/home">Home</a></li>
+                                <li class="breadcrumb-item"><a href="/noti">All Activities</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">Activity Details</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="check1-section">
+        <p></p>
+    </section>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 id="tripName" class="display-4">International Coastal Cleanup Day</h1>
+                <p style="font-size: 1.1em;">Clean Up with Purpose 🌍</p>
+
+                <h2 style="margin-bottom: 90px;">Join us in preserving our coastal ecosystems for future generations
+                </h2>
+
+
+
+
+                <div class="trip-header__highlights">
+                    <div class="trip-header__highlights-block"><span class="trip-header__highlights-label">Duration
+                        </span><span class="cdr-text_13-5-2 trip-header__highlights-value"
+                            data-ui="trip-length"><!--[-->3 Days <!--]--></span></div>
+                    <div class="trip-header__highlights-block"><span class="trip-header__highlights-label">Group
+                            Size</span><span class="cdr-text_13-5-2 trip-header__highlights-value"
+                            data-ui="group-size"><!--[-->4-10<!--]--></span></div>
+                    <div class="trip-header__highlights-block"><span class="trip-header__highlights-label">Activity
+                            level</span><button class="trip-header__difficulty-modal-trigger"
+                            data-ui="activity-info-icon"><span class="cdr-text_13-5-2 trip-header__highlights-value"
+                                data-ui="activity-level"><!--[-->3 <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" aria-hidden="true"
+                                    class="cdr-icon_13-5-2 cdr-icon--inherit-color_13-5-2 cdr-button__icon trip-header__information-icon"><!--[--><!--[--><!--]-->
+                                    <path role="presentation"
+                                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 8h-1a1 1 0 000 2v4a1 1 0 000 2h2a1 1 0 000-2v-5a.997.997 0 00-1-1zm0-4a1.25 1.25 0 100 2.5A1.25 1.25 0 0012 6z">
+                                    </path><!--]--><!---->
+                                </svg><!--]--></span></button></div>
+                </div>
+            </div>
+            <div class="book-now trip-header__book-now" use-sticky-version="false">
+                <div class="book-now__inner">
+                    <div class="book-now__info">
+                        <div class="book-now__pricing"><span class="book-now__label">Starting from</span>
+                            <div class="book-now__editorial"><span class="book-now__editorial--large"
+                                    data-ui="bkns-members-price"> 20th Mar</span> for REI Members </div><span
+                                class="book-now__subtext" data-ui="bkns-nonmembers-price"> 25th Jun for non-members
+                            </span>
+                            <!---->
+                        </div>
+                        <!---->
+                        <div class="book-now__departures"><span class="book-now__label">Departures</span><span
+                                class="book-now__editorial" id="tripDate">20th Mar 2024</span></div>
+                    </div>
+                    <div class="book-now__cta">
+                        <div class="book-now__buttons">
+                            <!---->
+                            <!---->
+                            <!----><button
+                                class="cdr-button_13-5-2 cdr-button--primary_13-5-2 cdr-button--large_13-5-2 cdr-button--full-width_13-5-2 book-now__button"
+                                type="button" data-ui="bkns-book-now"><!--[--><!--]--><!--[--><!--]--><!--[-->
+                                Join Now<!--]--><!--[--><!--]--></button>
+                        </div>
+                        <div class="book-now__buttonss">
+                            <!---->
+                            <!---->
+                            <!----><button
+                                class="cdr-button_13-5-2 cdr-button--primary_13-5-2 cdr-button--large_13-5-2 cdr-button--full-width_13-5-2 book-now__button"
+                                type="button" data-ui="bkns-book-now"
+                                onclick="scrollToBottom()"><!--[--><!--]--><!--[--><!--]--><!--[-->
+                                Need assistance? Just ask! <!--]--><!--[--><!--]--> </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Itinerary Overview -->
+
+     
+            <div id="popup"
+                style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); z-index: 9999; width: 400px; height: 100px; text-align: center; justify-content: center; align-items: center;">
+              
+                <p style="margin-bottom: 20px;">Your spot on the expedition is confirmed! We've also sent a confirmation
+                    email , so you can keep track of all the details.
+                </p>
+               
+              
+              
+
+            </div>
+
+          
+          
+
+
+
+
+            <!-- Your existing HTML code -->
+            <div id="right-side-item-container" class="hidden">
+
+                <ul>
+                    <li>
+                        <h2>Contents</h2>
+                    </li>
+                    <li><a href="#trip1-summary" class="nav-link">Why Book This Trip?</a></li>
+                    <li><a href="#Activities1" class="nav-link">Activities</a></li>
+                    <li><a href="#itinerary" class="nav-link">Itinerary</a></li>
+                    <li><a href="#gear-list" class="nav-link">Gear List</a></li>
+                    <li><a href="#you-may-like" class="nav-link">You May Also Like</a></li>
+                </ul>
+            </div>
+
+            <section id="check-section">
+                <p> </p>
+            </section>
+
+
+
+            <h1 id="trip1-summary">
+            </h1>
+            <div class="container-xxl py-5">
+                <div class="container">
+
+                    <section id="overview" class="section trip-overview" page-name="trip details">
+                        <div class="trip-overview__summary-container">
+                            <div class="section__inner">
+                                <div class="trip-overview__summary">
+                                    <div>
+                                        <div class="trip-overview__section trip-overview__section--summary-text">
+                                            <h1 id="trip-summary" class="trip-overview__section-title">
+                                                Summary
+                                            </h1>
+                                            <div class="activity-text-container">
+                                                <p data-ui="trip-short-summary">Join us in our mission to
+                                                    protect
+                                                    marine
+                                                    life and preserve pristine shores with our Beach Cleanup
+                                                    Activity.
+                                                    Dive into a day of environmental stewardship, where every
+                                                    piece
+                                                    of
+                                                    trash collected is a step towards a cleaner, healthier
+                                                    ocean.
+                                                    Together, let's make waves of change for a brighter,
+                                                    sustainable
+                                                    future.</p>
+                                                <div data-ui="trip-summary">
+                                                    <p>Perfect for women who want to try backpacking, advance
+                                                        their
+                                                        backcountry skills or get a taste of life as a
+                                                        thru-hiker,
+                                                        this
+                                                        trip is a learning journey that touches a spectacularly
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="photo-highlight">
+                                        <img class="photo-highlight__img" src="static/img/beachcleanup.jpg" alt="Room 1"
+                                            width="500" height="600">
+                                        <button class="photo-highlight__button" type="button"
+                                            aria-label="Open photo gallery for more images">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                                aria-hidden="true" class="photo-highlight__expand-icon">
+                                                <path role="presentation"
+                                                    d="M19.002 6.42l-4.295 4.287a1 1 0 01-1.414-1.415L17.583 5h-2.58a1 1 0 110-2h5.006a.997.997 0 01.992 1.029V9a1 1 0 01-2 .004l.001-2.584zM5 17.58l4.296-4.287a1 1 0 011.414 1.414L6.419 19H9a1 1 0 110 2H3.993A.997.997 0 013 19.97V15a1 1 0 012-.004v2.584z">
+                                                </path>
+                                            </svg>
+                                            <span>See all photos</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <h1 id="Activities1">
+                                </h1>
+
+                                <div class="section__inner">
+                                    <div
+                                        class="cdr-grid_13-5-2 cdr-grid--gutter-medium@xs_13-5-2 cdr-grid--gutter-medium@sm_13-5-2 cdr-grid--gutter-large@md_13-5-2 cdr-grid--gutter-large@lg_13-5-2 trip-overview__details">
+                                        <!--[-->
+                                        <div class="trip-overview__section trip-overview__section--highlights">
+                                            <h3 class="cdr-text_13-5-2 trip-overview__heading">
+                                                <!--[--> Highlights
+                                                <!--]-->
+                                            </h3>
+                                            <ul class="cdr-list_13-5-2 cdr-list--unordered_13-5-2">
+                                                <!--[-->
+                                                <!--[-->
+                                                <li class="trip-overview__highlight">Disconnect from everyday
+                                                    life
+                                                    swimming in a crystal blue mountain tarn</li>
+                                                <li class="trip-overview__highlight">Enjoy a cup of hot cocoa
+                                                    while
+                                                    sitting under a blanket of stars</li>
+                                                <li class="trip-overview__highlight">Create lifelong memories
+                                                    exploring the quite corners of pristine wilderness</li>
+                                                <li class="trip-overview__highlight">See the world through the
+                                                    eyes
+                                                    of a thru-hiker along a remote alpine ridge</li>
+                                                <li class="trip-overview__highlight">REI Women’s
+                                                    Adventure—designed
+                                                    for women, guided by women</li>
+                                                <!--]-->
+                                                <!--]-->
+                                            </ul>
+                                        </div>
+                                        <div class="trip-overview__section trip-overview__section--activities">
+                                            <h3 id="Activities" class="cdr-text_13-5-2 trip-overview__heading">
+                                                <!--[-->Activities
+                                                <!--]-->
+                                            </h3>
+                                            <div class="cdr-text_13-5-2 trip-overview__qualification"
+                                                data-ui="qualifications-content">
+                                                <!--[--><span>
+                                                    <p>This trip is rated Moderate [3]. Participants will be
+                                                        carrying their own backpacks weighing 35 to 40 pounds,
+                                                        distances of 4 to 7 miles daily over varied terrain. To
+                                                        maximize your enjoyment of the trip, we strongly
+                                                        encourage
+                                                        participants to be involved in a training regimen before
+                                                        the
+                                                        trip. Most important to your enjoyment of the trip is
+                                                        your
+                                                        overall fitness level. Nearly all hikes take place at
+                                                        elevations between 6,500'-7,500' with Mt. Eddy reaching
+                                                        9,026' above sea level.</p>
+                                                </span>
+
+                                            </div>
+                                            <ul class="cdr-list_13-5-2 cdr-list--unordered_13-5-2">
+
+                                                <li class="trip-overview__activity">Backpacking</li>
+                                                <li class="trip-overview__activity">Hiking</li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                    </section>
+
+                </div>
+            </div>
+            <!---->
+
+
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <section id="itinerary" class="itinerary section">
+                        <div class="section__inner itinerary__inner">
+                            <h2 class="cdr-text_13-5-2 itinerary__title">
+                                <!--[-->Your Adventure Itinerary
+                                <!--]-->
+                            </h2>
+                            <div class="itinerary__content">
+                                <div class="itinerary__map-container">
+                                    <figure style="" class="itinerary__map itinerary__map--desktop"><img
+                                            class="cdr-image_13-5-2" src="static/img/map.jpg"
+                                            alt="Itinerary map for Pacific Crest Trail Women&#39;s Backpacking"
+                                            style=""><button
+                                            class="cdr-button_13-5-2 cdr-button--secondary_13-5-2 cdr-button--medium_13-5-2 cdr-button--has-icon-left_13-5-2 itinerary__print-button"
+                                            type="button" style="display:none;"
+                                            data-ui="itinerary-print-btn"><!--[--><svg
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="cdr-icon_13-5-2 cdr-button__icon"><!--[--><!--[--><!--]-->
+                                                <path role="presentation"
+                                                    d="M3 17a1 1 0 01-1-1V9a1 1 0 011-1h4V5a1 1 0 011-1h8a1 1 0 011 1v3h4a1 1 0 011 1v7a1 1 0 01-1 1h-3l.561 1.684A1 1 0 0117.613 20H6.387a1 1 0 01-.948-1.316L6 17H3zm14.333-2H20v-5H4v5h2.667l.105-.316A1 1 0 017.721 14h8.558a1 1 0 01.949.684l.105.316zM8.5 8h7V5.5h-7V8zM7.27 18.5h9.46l-.67-3H7.94l-.67 3zM18 13a1 1 0 110-2 1 1 0 010 2z">
+                                                </path><!--]--><!---->
+                                            </svg><!--]--><!--[--><!--]--><!--[--> Print Itinerary
+                                            <!--]--><!--[--><!--]--></button></figure>
+                                </div>
+                                <article class="itinerary__days">
+                                    <!--[-->
+                                    <div class="itinerary__day">
+                                        <header><span class="itinerary__day-number">Day 1</span>
+                                            <h3 class="cdr-text_13-5-2 itinerary__day-subheading">
+                                                <!--[--><span>Begin your Pacific Crest Trail journey by heading
+                                                    north to
+                                                    Porcupine Lake</span>
+                                                <!--]-->
+                                            </h3>
+                                        </header>
+                                        <div class="itinerary__day-description">
+                                            <p>Our adventure begins this morning in Mount Shasta, California,
+                                                where
+                                                we meet
+                                                our guides and fellow travelers. After a brief orientation, pack
+                                                check, and
+                                                equitable distribution of group gear, we depart in our group
+                                                transportation
+                                                to Gumboot Saddle Trailhead to start our adventure on the
+                                                Pacific
+                                                Crest
+                                                Trail. </p>
+                                            <p>Backpacking: 6.2 miles; elevation gain: 750'.</p>
+                                        </div>
+                                    </div>
+                                    <div class="itinerary__day">
+                                        <header><span class="itinerary__day-number" style="display: none;">Day
+                                                2</span>
+                                            <h3 class="cdr-text_13-5-2 itinerary__day-subheading">
+                                                <!--[--><span>Backpack to Deadfall Lake and camp under Mount
+                                                    Eddy</span>
+                                                <!--]-->
+                                            </h3>
+                                        </header>
+                                        <div class="itinerary__day-description">
+                                            <p>We’ll wake to the smell of brewing coffee and take our time to
+                                                enjoy
+                                                a hearty
+                                                backcountry breakfast. With our boots laced, we’ll then hit the
+                                                trail to
+                                                continue our journey on the PCT towards scenic Deadfall Lake.
+                                            </p>
+                                            <p>Backpacking: 6.4 miles; elevation gain: 400' elevation.</p>
+                                        </div>
+                                    </div>
+
+                                    <!--]-->
+                                    <aside class="itinerary__note"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" aria-hidden="true"
+                                            class="cdr-icon_13-5-2 itinerary__note-icon"><!--[--><!--[--><!--]-->
+                                            <path role="presentation"
+                                                d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 8h-1a1 1 0 000 2v4a1 1 0 000 2h2a1 1 0 000-2v-5a.997.997 0 00-1-1zm0-4a1.25 1.25 0 100 2.5A1.25 1.25 0 0012 6z">
+                                            </path><!--]--><!---->
+                                        </svg>
+                                        <div>
+                                            <p>Although we do our very best to adhere to the schedule listed
+                                                above,
+                                                this
+                                                itinerary is subject to change for numerous reasons beyond our
+                                                control.</p>
+                                        </div>
+                                    </aside>
+                                </article>
+                            </div>
+                            <button class="cdr-button_13-5-2 cdr-button--secondary_13-5-2 cdr-button--medium_13-5-2"
+                                id="showItineraryBtn" type="button">
+                                Show full itinerary
+                            </button>
+                    </section><span></span><span></span>
+                    <!---->
+                    <!---->
+
+                </div>
+            </div>
+
+            <h1 id="gear-list">
+            </h1>
+
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <section id="gear-list" class="gear-list section">
+                        <div class="gear-list__inner">
+                            <!---->
+                            <div class="lighter-bg">
+                                <div class="section__inner">
+                                    <div>
+                                        <div>
+                                            <div class="gear-list__summary">
+                                                <h2 class="cdr-text_13-5-2 gear-list__summary-title">
+                                                    <!--[-->Gear List
+                                                    <!--]-->
+                                                </h2>
+                                                <!--[-->
+
+                                                <!--]-->
+                                            </div>
+                                        </div>
+
+
+                                        <div
+                                            class="cdr-grid_13-5-2 cdr-grid--gutter-medium@xs_13-5-2 cdr-grid--gutter-medium@sm_13-5-2 cdr-grid--gutter-large@md_13-5-2 cdr-grid--gutter-large@lg_13-5-2 gear-list__col">
+                                            <!--[-->
+                                            <div class="gear-list__pack-section">
+                                                <!--[-->
+                                                <h4 class="cdr-text_13-5-2 gear-list__pack-section-header"
+                                                    data-ui="gear-list-required-header">
+                                                    <!--[-->Required gear
+                                                    <!--]-->
+                                                </h4>
+                                                <ul class="cdr-list_13-5-2 cdr-list--unordered_13-5-2">
+                                                    <!--[-->
+                                                    <!--[-->
+                                                    <li class="gear-list__list-item" data-ui="gear-list-required-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            href="/s/multi-day-packs">
+                                                            <!--[-->Backpacking Pack (Multiday, 50-80L)
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+                                                    <li class="gear-list__list-item" data-ui="gear-list-required-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer" href="/c/gloves">
+                                                            <!--[-->Fleece/Wool Gloves
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+                                                    <li class="gear-list__list-item" data-ui="gear-list-required-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            href="/c/winter-hats">
+                                                            <!--[-->Fleece/Wool Hat
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+
+
+
+
+
+
+
+
+
+                                                    <li class="gear-list__list-item" data-ui="gear-list-required-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            href="/c/whistles">
+                                                            <!--[-->Whistle
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+                                                    <!--]-->
+                                                    <!--]-->
+                                                </ul>
+                                                <!--]-->
+                                                <!--[-->
+
+
+                                                <!--]-->
+                                            </div>
+                                            <div class="gear-list__pack-section">
+                                                <!--[-->
+                                                <h4 class="cdr-text_13-5-2 gear-list__pack-section-header"
+                                                    data-ui="gear-list-recommended-header">
+                                                    <!--[-->Recommended gear
+                                                    <!--]-->
+                                                </h4>
+                                                <ul class="cdr-list_13-5-2 cdr-list--unordered_13-5-2">
+                                                    <!--[-->
+                                                    <!--[-->
+                                                    <li class="gear-list__list-item"
+                                                        data-ui="gear-list-recommended-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            href="/c/bandanas">
+                                                            <!--[-->Bandana or Buff for Sun Protection
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+                                                    <li class="gear-list__list-item"
+                                                        data-ui="gear-list-recommended-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            href="/s/lightweight-base-layers">
+                                                            <!--[-->Base Layer Tops and Bottoms (Lightweight,
+                                                            Synthetic)
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+                                                    <li class="gear-list__list-item"
+                                                        data-ui="gear-list-recommended-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            href="/c/trail-running-shoes">
+                                                            <!--[-->Casual Shoes for Camp
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="gear-list__list-item"
+                                                        data-ui="gear-list-recommended-item">
+                                                        <a class="cdr-link_13-5-2 cdr-link--standalone_13-5-2"
+                                                            target="_blank" rel="noopener noreferrer" href="/c/trowels">
+                                                            <!--[-->Trowel
+                                                            <!--]-->
+                                                        </a>
+                                                    </li>
+                                                    <!--]-->
+                                                    <!--]-->
+                                                </ul>
+                                                <!--]-->
+                                                <!--[-->
+
+
+                                                <!--]-->
+                                            </div>
+                                            <!--]-->
+                                        </div>
+                                        <div class="gear-list__pack-section gear-list__pack-section--print hidden-xs">
+                                            <button id="printGearListBtn"
+                                                class="cdr-button_13-5-2 cdr-button--secondary_13-5-2 cdr-button--medium_13-5-2 cdr-button--has-icon-left_13-5-2 gear-list__print-button"
+                                                type="button" data-ui="gear-list-print-button"><!--[--><svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    aria-hidden="true"
+                                                    class="cdr-icon_13-5-2 cdr-icon--inherit-color_13-5-2 cdr-button__icon"><!--[--><!--[--><!--]-->
+                                                    <path role="presentation"
+                                                        d="M3 17a1 1 0 01-1-1V9a1 1 0 011-1h4V5a1 1 0 011-1h8a1 1 0 011 1v3h4a1 1 0 011 1v7a1 1 0 01-1 1h-3l.561 1.684A1 1 0 0117.613 20H6.387a1 1 0 01-.948-1.316L6 17H3zm14.333-2H20v-5H4v5h2.667l.105-.316A1 1 0 017.721 14h8.558a1 1 0 01.949.684l.105.316zM8.5 8h7V5.5h-7V8zM7.27 18.5h9.46l-.67-3H7.94l-.67 3zM18 13a1 1 0 110-2 1 1 0 010 2z">
+                                                    </path><!--]--><!---->
+                                                </svg><!--]--><!--[--><!--]--><!--[--><span>Print gear
+                                                    list</span><!--]--><!--[--><!--]--></button>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gear-list__footer visible-xs">
+                            <div class="collapsible collapsed" data-ui="gear-list-collapsible"><button
+                                    class="cdr-button_13-5-2 cdr-button--secondary_13-5-2 cdr-button--medium_13-5-2 collapsible__button"
+                                    type="button"><!--[--><!--]--><!--[--><!--]--><!--[-->Show
+                                    more<!--]--><!--[--><!--]--></button></div>
+                        </div>
+                    </section><span></span>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+         
+            </div>
+            <div class="col-lg-3 col-md-6">
+         
+                <div class="d-flex pt-2">
+                   
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            
+            </div>
+    
+        </div>
+    </div>
+
+</div>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Internal JavaScript Libraries -->
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/moment-timezone.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+
+
+    <!-- Template Javascript   <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>-->
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tripnext.js') }}"></script>
+
+    <script>function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,624 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Search bar styles */
+.search-bar {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+    /* Set border-radius to round all sides */
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px; /* Set border-radius to match the parent container */
+    width: 50%; /* Ensure the input takes up the full width */
+}
+#search-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Set border-radius to round all sides */
+    background-color: #86B817; /* Example background color */
+    color: #fff; /* Example text color */
+    cursor: pointer;
+}
+
+
+
+
+.search-bar label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #86B817;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-bar button:hover {
+    background-color: #86B817;
+}
+
+/* Main container */
+main {
+    display: flex;
+    animation: slideInFromTop 1s ease-in-out;
+}
+
+/* Left section */
+/* Left section */
+.left-section {
+    flex: 1; /* Adjust flex value */
+    max-width: 300px; /* Adjust max-width */
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.left-section h2 {
+    margin-bottom: 10px;
+}
+
+.left-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-section ul li {
+    margin-bottom: 10px;
+}
+
+.left-section ul li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc; /* Default border color */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    outline: none;
+}
+
+/* Change border color on hover */
+.left-section ul li a:hover {
+    background-color: #007bff; /* Background color on hover */
+    border-color: #007bff; /* Border color on hover */
+}
+
+/* Change background color on click */
+.left-section ul li a:active {
+    background-color: #007bff; /* Background color on click */
+}
+
+
+
+/* Products section */
+.products {
+    flex: 2;
+    text-align: center; 
+    background-color: #fff;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Product listing */
+.product {
+    margin-bottom: 20px;
+   
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product p {
+ 
+    font-size: 16px;
+    color: #666;
+}
+
+.products-container-wrap {
+
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding around the container */
+    border: 1px solid var(--nd-color-fgSecondary); /* Add border around the container */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    background-color: #f9f9f9;
+    height: 700px; /* Set the desired height */
+    overflow: auto; 
+}
+
+
+.product-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, HelveticaNeue-Medium, "Helvetica Neue Medium", Helvetica-Bold, Roboto-Medium, "Segoe UI Semibold", Arial-Bold, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-top: 0;
+    color: var(--nd-color-fgSecondary);
+}
+
+/* Description styling */
+.product-description {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, HelveticaNeue-Medium, "Helvetica Neue Medium", Helvetica-Bold, Roboto-Medium, "Segoe UI Semibold", Arial-Bold, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    color: var(--nd-color-fgSecondary);
+}
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.product {
+    flex: 0 0 calc(33.33% - 20px); /* Each product takes up 33.33% of the container width by default */
+    max-width: calc(33.33% - 20px); /* Set max-width to ensure proper spacing */
+    margin: 10px; /* Add margin between products */
+    /* Add other styling as needed */
+ 
+}
+
+/* Adjust layout for 2 products */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .product:nth-child(3),
+    .product:nth-child(4) {
+        display: none; /* Hide the third and fourth product */
+    }
+    .product {
+        flex: 0 0 calc(50% - 20px); /* Each product takes up 50% of the container width */
+        max-width: calc(50% - 20px); /* Set max-width to ensure proper spacing */
+    }
+}
+
+/* Adjust layout for small screens */
+@media (max-width: 767.98px) {
+    .product {
+        flex: 0 0 calc(100% - 20px); /* Each product takes up 100% of the container width on small screens */
+        max-width: calc(100% - 20px); /* Set max-width to ensure proper spacing */
+    }
+}
+
+
+/* Category tags */
+.category-tags {
+    margin-bottom: 20px; /* Add spacing below the category tags */
+}
+
+.filter-button {
+    display: inline-block;
+   
+    margin-right: 10px; /* Add spacing between buttons */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    width: 200px; /* Adjust the width as needed */
+    text-align: left; /* Align text to the left */
+}
+
+.filter-button:hover {
+    background-color: #86B817;
+    color: #fff;
+    border-color: #86B817;
+}
+
+/* Individual button styles */
+.filter-button[data-category="your-listing"] {
+    padding-left: 15px; /* Adjust padding for "Your Listings" */
+    padding-right: 15px;
+}
+
+.filter-button[data-category="all-listing"] {
+    padding-left: 25px; /* Adjust padding for "All Listings" */
+    padding-right: 25px;
+}
+
+.right-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 500px; /* Custom width */
+    height: 600px; /* Custom height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 20px; /* Adding border-radius to create curved corners */
+}
+
+.section-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.custom-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.custom-content p:first-child {
+    margin-top: 0;
+}
+
+
+.additional-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px; /* Add spacing between the boxes */
+    width: 350px; /* Custom width */
+    height: 350px; /* Custom height */
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 20px; /* Adding border-radius to create curved corners */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Align text center */ 
+}
+
+.additional-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.additional-content p:first-child {
+    margin-top: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.info-details {
+    margin-left: 10px; /* Adjust as needed */
+}
+
+.vertical-align p {
+    margin: 0; /* Removes default margin */
+    line-height: 1.5; /* Adjust vertical alignment */
+}
+
+.vertical-align p:nth-child(1) {
+    font-size: 1.2em; /* Increase font size for name */
+}
+
+.vertical-align p:nth-child(2) {
+    font-size: 0.8em; /* Decrease font size for location */
+    color: #888; /* Optional: Adjust text color for location */
+}
+
+
+
+.send-message-button {
+    color: #007bff; /* Blue text color */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px; /* Adjust padding to make the button smaller */
+    font-size: 14px; /* Reduce font size */
+    cursor: pointer;
+    margin-bottom: 10px; /* Add margin at the bottom of the button */
+}
+
+.send-message-button:hover {
+    text-decoration: underline; /* Underline text on hover */
+}
+
+.message-input-section {
+    margin-top: 10px; /* Add margin at the top of the input section */
+}
+
+.message-input-section input {
+    width: 200px; /* Adjust the width of the input field */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+
+.send-message-section {
+    margin-block: 0px;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, HelveticaNeue, "Helvetica Neue", Helvetica, Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+    max-width: 100%;
+    background-color: var(--theme-ui-colors-bg-elevated);
+    color: var(--theme-ui-colors-fg-primary);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 8px;
+    border-radius: 12px;
+}
+
+.image-container {
+    width: 450px; /* Set a fixed width for the container */
+    height: 350px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide any overflow beyond the specified dimensions */
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image fills the container horizontally */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+
+#selectedImagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selected-image {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.description {
+    margin-top: 30px; /* Add margin between profile details and description */
+     /* Optionally italicize the description */
+}
+.product {
+    position: relative;
+}
+
+.product .product-image {
+    position: relative;
+   
+}
+
+.product .save-icon {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 15px; /* Adjust the distance from the left */
+    color: rgb(252, 247, 247); /* Adjust the color of the icon */
+    font-size: 24px; /* Adjust the size of the icon */
+}
+
+.product .save-icon.clicked {
+    color: #86B817; /* Change the color when clicked */
+}
+
+
+
+#notification-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+  }
+
+
+  /* Styles for the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+.notification-wrapper {
+    position: fixed; /* Position the wrapper fixed within the viewport */
+    top: 100px; /* Adjust top position as needed */
+    right: 100px; /* Adjust left position as needed */
+    z-index: 999; /* Ensure the notification box is above other elements */
+}
+
+.notification {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    max-width: 300px;
+}
+
+.notification:hover {
+    transform: translateY(-5px);
+}
+
+.username {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.message {
+    color: #666;
+}
+
+.gallery-filter-container {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-button {
+    margin-right: 10px; /* Add some spacing between buttons */
+    background-color: #f0f0f0; /* Button background color */
+    border: none;
+    color: #333; /* Button text color */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #86B817; /* Button background color on hover */
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+    top: 140%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+.image-wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%; /* Makes the image circular */
+}
+
