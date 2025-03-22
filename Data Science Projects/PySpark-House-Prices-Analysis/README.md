@@ -40,7 +40,8 @@ This plot shows the difference between predicted and real values. A perfect mode
 
 Now we will move onto the Decision Tree model. Decision Trees offer a more flexible approach to modeling non-linear relationships and interactions between variables without the need for specific feature engineering. They are good at capturing complex patterns in the data by dividing the space into a hierarchy of yes or no decisions, making them goodfor datasets where the relationship between the variables and the target may not be easily approximated by a straight line. Our housing dataset has a diverse range of features from OverallQual to YearRemodAdd, and a Decision Tree has the potential to discern the nuanced decision rules that might factor into the sale price. However, a  consideration with Decision Trees is their tendency to overfit the training data. To prevent this, we will perform hyperparameter tuning, such as the depth of the tree and the minimum number of samples required to split, ensuring that the model generalizes well to unseen data. The following code will initialize our Decision Tree model, tune its hyperparameters, and evaluate its performance.
 
-![Residual Plot](/Images/decision_tree.png)
+![Residual Plot](https://github.com/rohitaragde/Projects/blob/master/Data%20Science%20Projects/PySpark-House-Prices-Analysis/Images/decision_tree.png)
+
 
 These feature importances show that Overall Quality is clearly the best variable for predicting sale price. It also shows that the feature we created has proven to be useful - GrLivArea2. It has 3x higher importance score than the original variable that was not squared.
 
