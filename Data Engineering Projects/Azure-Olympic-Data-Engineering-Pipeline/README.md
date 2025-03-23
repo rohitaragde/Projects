@@ -59,7 +59,9 @@ The data ingestion pipeline in Azure Data Factory includes the following dataset
 ## Storage Accounts
 The first step in the pipeline is setting up Azure Storage Accounts, which provide a secure and scalable environment for storing large amounts of data.
 
-![Storage Account](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_account.png)
+![Storage Account](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/storage_account.png)
+
+
 
 ## Containers 
 
@@ -67,13 +69,13 @@ Storage containers are utilized to separate the different datasets related to th
 
 The following image illustrates the setup of the storage containers used in this project:
 
-![Storage Container](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/storage_container_final.png)
+![Storage Container](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/storage_container_final.png)
 
 
 ## Linked Services and Resource Groups
 Linked services and resource groups are configured in Azure to manage the connections between different services used in the project. Ensure to set up the linked services and resource groups wherever required during the pipeline execution steps:
 
-![Linked Services](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/linked_services.png)
+![Linked Services](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/linked_services.png)
 
 
 ## Resource Groups
@@ -82,33 +84,33 @@ In this project, resource groups are utilized to efficiently organize and manage
 
 The following image illustrates the setup of the resource groups used in this project:
 
-![Resource Groups](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/resource_groups.png)
+![Resource Groups](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/resource_groups.png)
 
 
 ## Data Ingestion
 Once the storage account is set up, data is ingested from Kaggle to Azure Data Factory. The ingestion process allows for the automated transfer of CSV files to Azure.
 
-![Data Factory Pipeline](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/data_ingestion_pipeline.png)
+![Data Factory Pipeline](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/data_ingestion_pipeline.png)
 
 ## Raw Data Storage (Azure Data Lake Gen2)
 After ingestion, the raw data is stored in Azure Data Lake Gen2, which serves as a central repository for unstructured and structured data.
 
-![Raw Data Post Ingestion](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/raw_data_post_ingestion.png)
+![Raw Data Post Ingestion](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/raw_data_post_ingestion.png)
 
 ## Data Transformation (Azure Databricks)
 The raw data is then processed and transformed using Azure Databricks, where data cleaning, normalization, and other transformation tasks are performed.
 
-![Azure Databricks Transformation Setup](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/azure_databricks_transformation_setup.png)
+![Azure Databricks Transformation Setup](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/azure_databricks_transformation_setup.png)
 
 ## Transformed Data Storage (Azure Data Lake Gen2)
 The transformed data is stored back in Azure Data Lake Gen2, making it ready for analytics and further processing.
 
-![Transformed Data Post Transformation](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/transformed_data_post_transformation.png)
+![Transformed Data Post Transformation](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/transformed_data_post_transformation.png)
 
 ## Analytics (Azure Synapse Analytics)
 The stored data is analyzed using Azure Synapse Analytics, which provides powerful analytics capabilities to derive insights from the data.
 
-![Tokyo Synapse Analytics](https://github.com/rohitaragde/azure-de-olampics-data/blob/master/images/tokyo_synapse_analytics.png)
+![Tokyo Synapse Analytics](https://github.com/rohitaragde/Projects/blob/master/Data%20Engineering%20Projects/Azure-Olympic-Data-Engineering-Pipeline/images/tokyo_synapse_analytics.png)
 
 ## Insights and Analytics
 
